@@ -12,11 +12,11 @@ RUN python get-pip.py
 RUN git clone https://github.com/hyattpd/Prodigal.git
 RUN git clone https://github.com/mickaelsilva/chewbbaca_test.git
 #INSTALL chewBBACA requirements 
-WORKDIR /NGStools/chewBBACA
+WORKDIR /NGStools/chewbbaca_test
 RUN pip2 install -r requirements.txt
 RUN pip2 install --upgrade numpy
 #INSTALL PRODIGAL 
 WORKDIR /NGStools/Prodigal
 RUN make install
 WORKDIR /NGStools/
-#ADD chewBBACA TO PATH ENV PATH="/NGStools/chewBBACA:${PATH}"
+#ADD chewBBACA TO PATH ENV PATH="/NGStools/chewbbaca_test:${PATH}"
