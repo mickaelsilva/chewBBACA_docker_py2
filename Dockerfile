@@ -19,4 +19,5 @@ RUN pip2 install --upgrade numpy
 WORKDIR /NGStools/Prodigal
 RUN make install
 WORKDIR /NGStools/
-#ADD chewBBACA TO PATH ENV PATH="/NGStools/chewbbaca_test:${PATH}"
+#ADD chewBBACA TO PATH 
+ENV PATH="/NGStools/chewbbaca_test:${PATH}"
