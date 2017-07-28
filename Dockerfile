@@ -6,7 +6,7 @@ RUN apt-get install psmisc
 RUN apt-get install -y git make python-dev gcc wget libxml2-dev libxslt1-dev zlib1g-dev g++ build-essential
 
 #INSTALL PIP 
-RUN apt-get install python-pip  
+RUN apt-get install -y python-pip  
 #GET chewBBACA and Prodigal 
 RUN git clone https://github.com/hyattpd/Prodigal.git
 RUN git clone https://github.com/mickaelsilva/chewBBACA.git
