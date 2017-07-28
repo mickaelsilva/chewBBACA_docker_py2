@@ -11,7 +11,7 @@ RUN apt-get install -y python-pip
 RUN git clone https://github.com/hyattpd/Prodigal.git
 RUN git clone https://github.com/mickaelsilva/chewBBACA.git
 #INSTALL chewBBACA requirements 
-WORKDIR /NGStools/chewbbaca_test
+WORKDIR /NGStools/chewBBACA
 RUN pip2 install -r requirements.txt
 #RUN pip2 install --upgrade numpy
 #INSTALL PRODIGAL 
