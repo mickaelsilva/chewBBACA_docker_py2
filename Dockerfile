@@ -20,3 +20,4 @@ RUN make install
 WORKDIR /NGStools/
 #ADD chewBBACA TO PATH 
 ENV PATH="/NGStools/chewBBACA:${PATH}"
+ENV PATH="/NGStools/chewBBACA/utils/:$PATH"
