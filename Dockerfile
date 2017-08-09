@@ -9,7 +9,7 @@ RUN apt-get install -y git make python-dev gcc wget libxml2-dev libxslt1-dev zli
 RUN apt-get install -y python-pip  
 #GET chewBBACA and Prodigal 
 RUN git clone https://github.com/hyattpd/Prodigal.git
-RUN git clone https://github.com/mickaelsilva/chewBBACA.git
+RUN git clone https://github.com/B-UMMI/chewBBACA.git
 #INSTALL chewBBACA requirements 
 WORKDIR /NGStools/chewBBACA
 RUN pip2 install -r requirements.txt
