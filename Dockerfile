@@ -18,6 +18,17 @@ RUN pip2 install -r requirements.txt
 WORKDIR /NGStools/Prodigal
 RUN make install
 WORKDIR /NGStools/
+
+#install mafft and clustalw2 to run schema evaluator
+RUN sudo apt-get install mafft
+RUN wget www.clustal.org/download/current/clustalw-2.1-linux-x86_64-libcppstatic.tar.gz
+RUN tar -zxf clustalw-2.1-linux-x86_64-libcppstatic.tar.gz
+
 #ADD chewBBACA TO PATH 
 ENV PATH="/NGStools/chewBBACA:${PATH}"
 ENV PATH="/NGStools/chewBBACA/utils/:$PATH"
+
+# add clustalw2 to path
+ENV PATH="/NGStools/clustalw-2.1-linux-x86_64-libcppstatic:${PATH}"
+RUN which clustalw2
+RUN which mafft
