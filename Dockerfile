@@ -20,7 +20,7 @@ RUN make install
 WORKDIR /NGStools/
 
 #install mafft and clustalw2 to run schema evaluator
-RUN sudo apt-get install mafft
+RUN apt-get install mafft
 RUN wget www.clustal.org/download/current/clustalw-2.1-linux-x86_64-libcppstatic.tar.gz
 RUN tar -zxf clustalw-2.1-linux-x86_64-libcppstatic.tar.gz
 
